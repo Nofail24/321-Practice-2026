@@ -24,7 +24,7 @@ public class HoodConstants {
     public static final boolean kSupplyLimitEnabled = true;
     public static final Current kstatorLimit = Amps.of(40);
     public static final boolean kstatorLimitEnable = true;
-      public static final String kRobot = "Walter";
+    public static final String kRobot = "Walter";
     public static final Angle kFeedAngle = Degrees.of(15);
     public static final double kFedAngle = kFeedAngle.in(Degrees);
     public static final double kFeeedAngle = kFeedAngle.in(Radians);
