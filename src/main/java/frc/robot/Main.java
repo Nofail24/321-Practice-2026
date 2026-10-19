@@ -4,12 +4,21 @@
 
 package frc.robot;
 
+import com.ctre.phoenix6.configs.CurrentLimitsConfigs;
+import com.ctre.phoenix6.configs.TalonFXConfiguration;
+import com.ctre.phoenix6.hardware.TalonFX;
+
 import edu.wpi.first.wpilibj.RobotBase;
+import frc.robot.subsystems.hood.HoodConstants;
 
 public final class Main {
   private Main() {}
 
   public static void main(String... args) {
     RobotBase.startRobot(Robot::new);
+   
   }
+
+  
 }
+
