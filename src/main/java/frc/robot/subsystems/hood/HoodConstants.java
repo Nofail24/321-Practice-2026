@@ -2,15 +2,22 @@ package frc.robot.subsystems.hood;
 
 import static edu.wpi.first.units.Units.Amps;
 import static edu.wpi.first.units.Units.Degrees;
+import static edu.wpi.first.units.Units.DegreesPerSecond;
+import static edu.wpi.first.units.Units.DegreesPerSecondPerSecond;
 import static edu.wpi.first.units.Units.Radians;
 import static edu.wpi.first.units.Units.Volts;
 
 import com.ctre.phoenix6.signals.InvertedValue;
 import com.ctre.phoenix6.signals.NeutralModeValue;
 
+import edu.wpi.first.math.controller.PIDController;
+import edu.wpi.first.math.trajectory.TrapezoidProfile;
 import edu.wpi.first.units.measure.Angle;
+import edu.wpi.first.units.measure.AngularAcceleration;
+import edu.wpi.first.units.measure.AngularVelocity;
 import edu.wpi.first.units.measure.Current;
 import edu.wpi.first.units.measure.Voltage;
+import edu.wpi.first.wpilibj2.command.TrapezoidProfileCommand;
 
 public class HoodConstants {
     public static final Voltage kMaxVoltage = Volts.of(12);
@@ -30,4 +37,9 @@ public class HoodConstants {
     public static final double kFeeedAngle = kFeedAngle.in(Radians);
     public static final NeutralModeValue kNeutralMode = NeutralModeValue.Brake;
     public static final double kSensor = 142/7 ;
+    public static final Angle kHoodAngelTolerance = Degrees.of(1.5);
+    public static final AngularVelocity kMaxVelocity = DegreesPerSecond.of(0);
+    public static final AngularAcceleration kMaxAcceleration = DegreesPerSecondPerSecond.of(0);
+        
+          
 }
