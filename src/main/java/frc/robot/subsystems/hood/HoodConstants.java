@@ -40,6 +40,7 @@ public class HoodConstants {
     public static final Angle kHoodAngelTolerance = Degrees.of(1.5);
     public static final AngularVelocity kMaxVelocity = DegreesPerSecond.of(0);
     public static final AngularAcceleration kMaxAcceleration = DegreesPerSecondPerSecond.of(0);
+    public static final Voltage kHomingVoltage = null;
         
           
 }
